@@ -8,3 +8,8 @@ class Conversation:
 
     def title(self) -> str:
         return self.title
+
+    def __repr__(self):
+        return "{} {}".format(
+            self.peer_id, self.title
+        )
