@@ -10,7 +10,7 @@ class ConversationsHelper:
         conversations = []
 
         response = self.api.messages.searchConversations(
-            count=count, extended=true, v=5.131
+            count=count, extended=True, v=5.131
         )
 
         items = response["items"]
