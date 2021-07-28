@@ -6,7 +6,7 @@ class ConversationsHelper:
     def __init__(self, api: vk.API):
         self.api = api
 
-    def get_conversations(self, count: int):
+    def get(self, count: int):
         conversations = []
 
         response = self.api.messages.searchConversations(
